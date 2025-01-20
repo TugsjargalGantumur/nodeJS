@@ -1,6 +1,20 @@
 const express = require("express");
 const { v4: uuidv4 } = require("uuid");
-const { items } = require("./data");
+
+let items = [
+  {
+    id: 1,
+    name: "Item 1",
+    description: "Description for Item 1",
+    category: "Category A",
+  },
+  {
+    id: 2,
+    name: "Item 2",
+    description: "Description for Item 2",
+    category: "Category B",
+  },
+];
 
 const app = express();
 const PORT = 8000;
